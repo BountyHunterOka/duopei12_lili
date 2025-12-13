@@ -49,6 +49,8 @@
     <button id="stopBtn" class="stop">停止抢单</button>
     <button id="voiceStartBtn" class="voice">开启连麦过滤</button>
     <button id="voiceStopBtn" class="voice">关闭连麦过滤</button>
+    <button id="recordStartBtn" class="voice">开启文语过滤</button>
+    <button id="recordStopBtn" class="voice">关闭文语过滤</button>
     <button id="checkBtn" class="check">检查状态</button>
   </div>
 
@@ -78,6 +80,8 @@
     document.getElementById('stopBtn').onclick = () => callApi("/stop", "停止抢单");
     document.getElementById('voiceStartBtn').onclick = () => callApi("/voice_start", "开启连麦过滤");
     document.getElementById('voiceStopBtn').onclick = () => callApi("/voice_stop", "关闭连麦过滤");
+    document.getElementById('recordStartBtn').onclick = () => callApi("/record_start", "开启文语过滤");
+    document.getElementById('recordStopBtn').onclick = () => callApi("/record_stop", "关闭文语过滤");
     document.getElementById('checkBtn').onclick = () => callApi("/check_running", "检查状态");
   </script>
 </body>
