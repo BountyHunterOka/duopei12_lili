@@ -51,6 +51,8 @@
     <button id="voiceStopBtn" class="voice">关闭连麦过滤</button>
     <button id="recordStartBtn" class="voice">开启文语过滤</button>
     <button id="recordStopBtn" class="voice">关闭文语过滤</button>
+    <button id="amountStartBtn" class="voice">开启金额过滤(20)</button>
+    <button id="amountStopBtn" class="voice">关闭金额过滤(20)</button>
     <button id="checkBtn" class="check">检查状态</button>
   </div>
 
@@ -82,6 +84,8 @@
     document.getElementById('voiceStopBtn').onclick = () => callApi("/voice_stop", "关闭连麦过滤");
     document.getElementById('recordStartBtn').onclick = () => callApi("/record_start", "开启文语过滤");
     document.getElementById('recordStopBtn').onclick = () => callApi("/record_stop", "关闭文语过滤");
+    document.getElementById('amountStartBtn').onclick = () => callApi("/record_start", "开启金额过滤(20)");
+    document.getElementById('amountStopBtn').onclick = () => callApi("/record_stop", "关闭金额过滤(20)");
     document.getElementById('checkBtn').onclick = () => callApi("/check_running", "检查状态");
   </script>
 </body>
